@@ -1,0 +1,16 @@
+services:          
+  open-webui-pipelines:
+    image: ghcr.io/open-webui/pipelines:main
+    container_name: open-webui-pipelines
+    volumes:
+      - ./pipelines:/app/pipelines
+      - ./pipelines/data:/app/pipelines/data
+    ports:
+      - 9099:9099
+    restart: unless-stopped
+
+    environment:
+      - 'PYTHONPATH=/app:$${PYTHONPATH}'
+      - 'OLLAMA_BASE_URL=http://host.docker.internal:11434'
+      - 'PIPELINES_REQUIREMENTS_PATH=/app/pipelines/requirements.txt'
+
