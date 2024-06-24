@@ -2,3 +2,4 @@
 
 1. https://github.com/agb94/arxiv-rss-newsletter/issues/127
 2. https://www.philschmid.de/fine-tune-llms-in-2024-with-trl
+3. https://github.com/Hannibal046/Awesome-LLM?tab=readme-ov-file#llm-books
