@@ -7,3 +7,5 @@ Place for LLM investigation
 2. Instruct Model with RLHF
 3. Finetuning LLMs
     - 
+
+## Evals - OpenAI
