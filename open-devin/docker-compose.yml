@@ -1,0 +1,20 @@
+services:
+  opendevin-app:
+    image: ghcr.io/opendevin/opendevin:0.6.2
+    container_name: opendevin-app
+    env_file:
+      - .env
+    environment:
+      - SANDBOX_USER_ID=${SANDBOX_USER_ID}
+      - WORKSPACE_MOUNT_PATH=${WORKSPACE_BASE}
+      - LLM_API_KEY=${LLM_API_KEY}
+      - LLM_BASE_URL=${LLM_BASE_URL}
+      - LLM_EMBEDDING_MODEL=${LLM_EMBEDDING_MODEL}
+    volumes:
+      - ${WORKSPACE_BASE}:/opt/workspace_base
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "3003:3000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    

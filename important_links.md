@@ -8,3 +8,5 @@
 6. https://www.llm-agents.info/
 7. https://docs.phidata.com/templates/llm-os/run-local
 8. https://medium.com/@gong_ys2004/a-walkthrough-to-tune-llms-with-ray-clusters-in-the-on-premise-k8s-platform-331d4f16e311
+9. https://medium.com/olivier-j-n-bertrand/debates-as-seen-through-the-prompts-of-llms-7161003ccd92
+10. https://github.com/bolirev/ai-debate
